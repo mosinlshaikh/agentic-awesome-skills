@@ -166,6 +166,12 @@ INDIRECT PATHS: PASS | FAIL | NOT VERIFIED
 PRIVILEGED ACTION AUDITABILITY: PASS | FAIL | NOT VERIFIED
 
 OVERALL: PASS | FAIL | INCOMPLETE
+
+Roll-up rules:
+- PASS only when policy coverage is complete, no required policy is UNDEFINED, and every required category is PASS.
+- FAIL when a confirmed authorization defect exists or any required category is FAIL.
+- INCOMPLETE when any required policy is UNDEFINED, policy coverage is incomplete, or any required category is NOT VERIFIED.
+
 Findings: <IDs with actor, resource, operation, evidence, and impact>
 Undefined policies: <explicit list>
 Untested paths: <explicit list>
